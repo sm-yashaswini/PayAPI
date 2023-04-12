@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | PayAPI Website Challenge</title>
+  </head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <picture>
+           <a href="index.html"><img src="assets/shared/desktop/logo.svg" alt="logo"></a>
+          </picture>
+        </div>
+        <div class="navigation">
+          <nav class="flexnav">
+            <a href="#" class="togglenav"><img src="assets/shared/mobile/menu.svg" alt="menu"></a> 
+            <ul>
+              <div class="closingbutton">
+                <img src="assets/shared/mobile/close.svg" alt="closebutton">
+              </div>
+              <hr class="line">
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          </div>
+          <button class="schedule">Schedule a Demo</button>
+      </div>
+    </div>
+  <div class="container">
+    <div class="work-heading">
+      <h1>Submit a help request and we’ll get in touch shortly.</h1> 
+    </div>
+  </div> 
+    <!-- Form  -->
+  <div class="container">
+    <div class="details">
+
+      <div class="form">
+    <form name="myForm">
+      <input type="text" id="name" name="name" placeholder="Name" class="flname" class="formitems" required><br>
+      <input type="email" id="email" name="email" value="" placeholder="E-mail Address" class="mail" class="formitems"><br>
+      <input type="text" id="company" name="company" value="" placeholder="Company Name" class="comp" class="formitems"><br>
+      <input type="text" id="title" name="title" value="" placeholder="Title" class="ttl" class="formitems"><br>
+      <input type="text" id="msg" name="msg" value="" placeholder="Message" class="mess" class="formitems">
+      <div class="updating">
+        <!-- <input type="checkbox" id="notify" name="note" value="" class="notification"> -->
+        <label for="notify"> Stay up-to-date with company announcements and updates to our API</label><br>
+      </div>
+      <button type="submit" onclick="myFunction()" class="submitbutton">Submit</button>
+    </form> 
+
+    </div>
+
+    <div class="join">
+      <p>Join the thousands of innovators already building with us</p>
+      <div class="logoright">
+        <picture>
+          <img src="assets/shared/desktop/tesla.svg" alt="tesla">
+          <img src="assets/shared/desktop/microsoft.svg" alt="ms">
+          <img src="assets/shared/desktop/hewlett-packard.svg" alt="hp">
+          <img src="assets/shared/desktop/oracle.svg" alt="or">
+          <img src="assets/shared/desktop/google.svg" alt="google">
+          <img src="assets/shared/desktop/nvidia.svg" alt="nv">
+          
+        </picture>
+      </div>
+    </div>
+    </div>
+  </div>  
+    <!-- Ready to start  -->
+  <div class="container">
+    <div class="rts">
+        
+      <div class="ready">
+        <p>Ready to Start?</p>
+      </div>
+      
+      <div class="email">
+        <div class="inputemail">
+          <input type="email" class="emailf" name="email" placeholder="Enter email address">
+        </div>
+        <div class="emailbutton">
+          <button class="schedule" id="sched">Schedule a Demo</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    <!-- Footer  -->
+
+    <div class="footer">
+      <div class="container">
+        <div class="content">
+      <div class="left">
+        <img src="./assets/home/desktop/logopayapi.png" alt="logo">
+        <ul>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>  
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="right">
+        <div class="socialmedia">
+          <img src="./assets/shared/desktop/facebook.svg" alt="fb" class="socialimg">
+          <img src="./assets/shared/desktop/twitter.svg" alt="fb" class="socialimg"> 
+          <img src="./assets/shared/desktop/linkedin.svg" alt="fb" class="socialimg">
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    </div>
+
+    <!-- JS  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      function myFunction(){
+      let x  = document.getElementById("name");
+      console.log(x);
+      let text;
+      if(x == ""){
+        text = "This field can't be empty";
+      }
+      else{
+        text = "Cool"
+      }
+
+      document.getElementById("demo").innerHTML = text;
+    }
+
+    // Nav 
+
+    $(function(){
+      $('.togglenav').on('click',function(){
+        $('.flexnav ul').toggleClass('open');
+      });
+    });
+    </script>
+  </body>
+
+</html>
