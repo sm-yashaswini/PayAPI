@@ -8,9 +8,9 @@ body{
     /* overflow: hidden; */
 }
 
-.wrapper{
+/* .wrapper{
     margin: 50px;
-}
+} */
 
 html{
     box-sizing: border-box;
@@ -32,11 +32,11 @@ html{
 /* Nav  */
 
 .navbar {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: auto;
 }
 
 .navigation {

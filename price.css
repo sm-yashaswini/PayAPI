@@ -8,9 +8,6 @@ body{
     /* overflow: hidden; */
 }
 
-.wrapper{
-    margin: 50px;
-}
 
 html{
     box-sizing: border-box;
@@ -30,10 +27,12 @@ html{
 }
 
 /* Navbar  */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
 .navigation {
@@ -395,6 +394,7 @@ hr{
     .content{
         /* text-align: center; */
         width: 100%;
+        justify-content: center;
     }
 
     .footer{
@@ -402,6 +402,7 @@ hr{
     height: 300px;
     /* margin: auto;*/
     width: 100%;
+    padding: 0 30px;
 }
 
     .left{
